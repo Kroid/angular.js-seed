@@ -1,0 +1,21 @@
+.container-fluid
+  .row(style='margin-top: 20px;')
+    .col-xs-12.col-md-4.col-md-offset-4.text-center
+      a(href='https://github.com/Kroid/angular.js-seed' target='_blank')
+        img(src='/images/github-logo.png' width='400')
+        b AngularJS Seed
+
+  .row(style='margin-top: 20px;')
+    .col-xs-12.col-md-4.col-md-offset-4
+      form(ng-submit='vm.login(vm.user.email, vm.user.password)')
+        .form-group
+          label.control-label(for='email') Email:
+          input.form-control#email(name='email' ng-model='vm.user.email')
+        
+        .form-group
+          label(for='password') Password:
+          input.form-control#password(name='password' type='password' ng-model='vm.user.password')
+
+        .form-group
+          button.form-control.btn.btn-primary Log In
+          p.text-danger.text-center(ng-bind='vm.error')

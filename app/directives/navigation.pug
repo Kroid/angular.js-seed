@@ -1,0 +1,19 @@
+.container-fluid(
+  ng-if='user'
+  style='padding: 10px; border-bottom: solid 2px #ddd; margin-bottom: 20px;'
+)
+  .row
+    .col-xs-2
+      a.btn.btn-link(
+        style='font-size: 200%; margin-top: -10px; margin-bottom: -5px;'
+        href='/'
+      ) AngularJS Seed
+    .col-xs-9
+      a.btn.btn-link(style='font-size: 120%;' href='#') link
+      a.btn.btn-link(style='font-size: 120%;' href='#') link
+      a.btn.btn-link(style='font-size: 120%;' href='#') link
+    .col-xs-1
+      button.btn.btn-link.text-right(
+        style='font-size: 120%;'
+        ng-click='logout()'
+      ) Logout

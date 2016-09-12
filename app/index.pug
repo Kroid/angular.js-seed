@@ -1,0 +1,15 @@
+doctype html
+html(lang="ru" ng-app="app")
+  head
+    title AngularJS seed project
+    base(href='/')
+    meta(charset="utf-8")
+
+    //- link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css")
+    link(href='/app.css' rel='stylesheet')
+
+    script(src='/bundle.js' type='text/javascript')
+
+  body(ng-cloak)
+    div(navigation)
+    div(ng-view)
